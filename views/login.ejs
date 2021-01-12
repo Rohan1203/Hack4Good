@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Login</title>
+    <style>
+    .cf{
+        background-color: #00ADFF;
+        padding: 15px;
+      }
+  
+      .text{
+        margin: auto;
+      }
+  
+      ul {
+        list-style-type: none;
+        margin-left: 30px;
+        margin-top: -15px;
+        padding: 0;
+        overflow: hidden;
+        width: 95%;
+        position: fixed;
+        background-color: #333333;
+      }
+  
+      li {
+        float: right;
+      }
+  
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+      }
+  
+      li a:hover {
+        text-decoration: none;
+        color: whitesmoke;
+        background-color: #111111;
+      }
+
+      .form{
+        background-color: #282C34;
+        width: 30%;
+        padding:5%;
+        margin-top: 40px;
+        border-radius: 15px;
+        color: whitesmoke;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid cf">
+      <h2 class="text">Login</h2>
+    </div>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/register">SignUp</a></li>
+    </ul>
+<br>
+<br>
+<br>
+   <div class="container form form-group">
+    <form action="/login" method="POST">
+        <center><label for="username">Username</label> <br>
+            <input class="form-control" type="text" placeholder="username" id="xyz" name="username"> <br> <br>
+            <label for="password">Password</label> <br>
+            <input class="form-control" type="password" placeholder="password" id="password" name="password"> <br>
+            <button class="btn btn-default">Login</button>
+        </center>
+    </form>
+   </div>
+</body>
+</html>
